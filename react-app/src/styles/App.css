@@ -1,0 +1,112 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: monospace;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    gap: 10px;
+    height: 100vh;
+
+}
+
+input {
+    border: none;
+}
+
+input:hover::placeholder {
+    color: black;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+}
+
+button {
+    background-color: white;
+    color: grey;
+    border: none;
+}
+
+.remove-button:hover {
+    color: red;
+}
+
+button:hover {
+    color: black;
+}
+
+.input-container {
+    display: grid;
+    grid-auto-flow: row;
+    border: 1px solid black;
+    align-content: start;
+    gap: 20px;
+    padding: 10px;
+}
+
+.practical-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.practical-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.practical-title, .school-discipline {
+    font-style: italic;
+}
+
+.practical-resp {
+    overflow: hidden;
+    text-overflow: ellipsis; /* Optional if truncating */
+    max-width: 100%; /* Allow the content to take up the available space */
+    word-wrap: break-word; /* Break long words and wrap text */
+  }
+
+.practical-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+  
+}
+
+.education-input {
+    display: flex;
+    gap: 10px;
+}
+
+.render-container {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 10px;
+    padding: 10px;
+}
+
+.dates {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title, .name {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.company-name, .school-name {
+    font-size: large;
+    font-weight: bold;
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
